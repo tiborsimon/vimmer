@@ -8,8 +8,8 @@ GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
 RESET=$(tput sgr0)
 
-TASK="[ $BOLD$GREEN>>$RESET ]"
-OK="[ $BOLD$GREENOK$RESET ]"
+TASK="[ ${BOLD}${GREEN}>>${RESET} ]"
+OK="[ ${BOLD}${GREEN}OK${RESET} ]"
 WARNING="[ $BOLD$YELLOW!!$RESET ]"
 ERROR="[$BOLD$REDFAIL$RESET]"
 
