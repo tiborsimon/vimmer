@@ -2,16 +2,16 @@
 
 FILE="$HOME/.vimrc"
 
-BOLD    := $(tput bold)
-RED     := $(tput setaf 1)
-GREEN   := $(tput setaf 2)
-YELLOW  := $(tput setaf 3)
-RESET   := $(tput sgr0)
+BOLD=$(tput bold)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+RESET=$(tput sgr0)
 
-TASK    := [ ${BOLD}${GREEN}>>${RESET} ]
-OK      := [ ${BOLD}${GREEN}OK${RESET} ]
-WARNING := [ ${BOLD}${YELLOW}!!${RESET} ]
-ERROR   := [${BOLD}${RED}FAIL${RESET}]
+TASK=[ ${BOLD}${GREEN}>>${RESET} ]
+OK=[ ${BOLD}${GREEN}OK${RESET} ]
+WARNING=[ ${BOLD}${YELLOW}!!${RESET} ]
+ERROR=[${BOLD}${RED}FAIL${RESET}]
 
 echo "${TASK} Installing ${BOLD}vimplug${RESET}.."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
