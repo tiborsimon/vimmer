@@ -63,6 +63,10 @@ nnoremap ; :
 
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 call plug#begin('~/.vim/plugged')
     Plug 'jiangmiao/auto-pairs'
