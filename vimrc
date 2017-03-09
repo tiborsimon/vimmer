@@ -1,3 +1,8 @@
+#!/bin/bash
+
+FILE="~/.vimrc"
+
+/bin/cat <<EOM >$FILE
 " Genral UI settings
 set number             " Enables the line numbers.
 set ruler              " Enables the ruler on the bottom of the screen.
@@ -42,3 +47,4 @@ nnoremap ; :
 
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
+EOM
