@@ -14,7 +14,7 @@ WARNING="[ $BOLD$YELLOW!!$RESET ]"
 ERROR="[$BOLD$REDFAIL$RESET]"
 
 echo "$TASK Installing $BOLDvimplug$RESET.."
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null
 echo "$OK Done"
 
 echo "$TASK Generating $BOLD.vimrc$RESET file.."
