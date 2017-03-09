@@ -68,6 +68,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+nnoremap <leader>mm :!clear && make<cr>
+nnoremap <leader>mt :!clear && make test<cr>
+nnoremap <leader>mc :!clear && make clean<cr>
+nnoremap <leader>m<leader> :!clear && make 
+
 call plug#begin('~/.vim/plugged')
     Plug 'jiangmiao/auto-pairs'
     Plug 'kana/vim-arpeggio'
