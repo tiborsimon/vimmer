@@ -13,7 +13,7 @@ OK="[ ${BOLD}${GREEN}OK${RESET} ]"
 WARNING="[ ${BOLD}${YELLOW}!!${RESET} ]"
 ERROR="[${BOLD}${RED}FAIL${RESET}]"
 
-echo "${TASK} Installing ${BOLD}vimplug${RESET}.."
+echo "${TASK} Installing ${BOLD}vim-plug${RESET} from GitHub.."
 curl -fLsSo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "${OK} Done"
 
