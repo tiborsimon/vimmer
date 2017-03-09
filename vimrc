@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="~/.vimrc"
+FILE="$HOME/.vimrc"
 
 /bin/cat <<EOM >$FILE
 " Genral UI settings
