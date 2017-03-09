@@ -8,16 +8,16 @@ GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
 RESET=$(tput sgr0)
 
-TASK=[ ${BOLD}${GREEN}>>${RESET} ]
-OK=[ ${BOLD}${GREEN}OK${RESET} ]
-WARNING=[ ${BOLD}${YELLOW}!!${RESET} ]
-ERROR=[${BOLD}${RED}FAIL${RESET}]
+TASK=[ $BOLD$GREEN>>$RESET ]
+OK=[ $BOLD$GREENOK$RESET ]
+WARNING=[ $BOLD$YELLOW!!$RESET ]
+ERROR=[$BOLD$REDFAIL$RESET]
 
-echo "${TASK} Installing ${BOLD}vimplug${RESET}.."
+echo "$TASK Installing $BOLDvimplug$RESET.."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-echo "${OK} Done"
+echo "$OK Done"
 
-echo "${TASK} GEnerating ${BOLD}.vimrc${RESET} file.."
+echo "$TASK GEnerating $BOLD.vimrc$RESET file.."
 /bin/cat <<EOM >$FILE
 " Genral UI settings
 set number             " Enables the line numbers.
@@ -64,6 +64,4 @@ nnoremap ; :
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 EOM
-echo "${OK} Done"
-
-
+echo "$OK Done"
