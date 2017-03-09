@@ -63,5 +63,74 @@ nnoremap ; :
 
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
+
+call plug#begin('~/.vim/plugged')
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'kana/vim-arpeggio'
+    Plug 'ntpeters/vim-better-whitespace'
+    Plug 'jeetsukumaran/vim-buffergator'
+    Plug 'MattesGroeger/vim-bookmarks'
+    Plug 'easymotion/vim-easymotion'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'scrooloose/nerdtree'
+    Plug 'elzr/vim-json'
+    Plug 'dbakker/vim-projectroot'
+    Plug 'gregsexton/MatchTag'
+    Plug 'mhinz/vim-startify'
+    Plug 'tpope/vim-surround'
+    Plug 'ervandew/supertab'
+    Plug 'joeytwiddle/sexy_scroller.vim'
+    Plug 'nathanalderson/yang.vim'
+    Plug 'tpope/vim-repeat'
+    Plug 'sukima/xmledit'
+  call plug#end()
+
+  "Arpeggio
+  call arpeggio#map('iv', '', 0, 'jk', '<Esc>')
+
+  "BetterWhitespace
+  nnoremap <leader>sw :StripWhitespace<cr>
+
+  "Bookmarks
+  let g:bookmark_sign = '>>'
+  let g:bookmark_annotation_sign = '##'
+  let g:bookmark_auto_close = 1
+  let g:bookmark_highlight_lines = 1
+  let g:bookmark_save_per_working_dir = 1
+  let g:bookmark_auto_save = 1
+  let g:bookmark_center = 1
+
+  "GitGutter
+  let g:gitgutter_max_signs = 2000
+
+  "NERDTree
+  nnoremap <silent> <F2> :NERDTreeToggle<CR>
+  let g:NERDTreeMapMenu = '<F3>'
+  let g:NERDTreeChristmasTree = 1
+  let g:NERDTreeCaseSensitiveSort = 1
+  let g:NERDTreeQuitOnOpen = 1
+  let g:NERDTreeWinPos = 'left'
+  let g:NERDTreeShowBookmarks = 1
+  let g:NERDTreeDirArrows=0
+  let NERDTreeMinimalUI=0
+  let NERDTreeIgnore = ['\.pyc$']
+
+  "ProjectRoot
+  function! <SID>AutoProjectRootCD()
+    try
+      if &ft != 'help'
+        ProjectRootCD
+      endif
+    catch
+      " Silently ignore invalid buffers
+    endtry
+  endfunction
+  autocmd BufEnter * call <SID>AutoProjectRootCD()
+
+  "SexyScroller
+  let g:SexyScroller_MaxTime = 400
+  let g:SexyScroller_EasingStyle = 3
+
 EOM
 echo "${OK} Done"
