@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-1. `bash <(curl -fsSL tiborsimon.github.io/vimmers/vimrc`
+1. `bash <(curl -fsSL tiborsimon.github.io/vimmers/vimrc)`
 1. start vim
 1. run: `:PlugInstall` in vim
 1. celebrate
@@ -20,12 +20,12 @@
 Deploy the configuration by running the following command: 
 
 ```
-bash <(curl -fsSL USERNAME.github.io/vimmers/vimrc
+bash <(curl -fsSL USERNAME.github.io/vimmers/vimrc)
 ```
 
-This will download and execute the install script hosted by GitHub pages.
+This will download and execute the install script hosted on GitHub pages.
 
-The script does the following tasks before your modifications:
+The vanilla script does the followings:
 
 1. Installs [vim-plug](https://github.com/junegunn/vim-plug).
 1. Creates/overwrite the `.vimrc` file on your system.
