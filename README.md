@@ -31,9 +31,9 @@ The vanilla script does the followings:
 
 After installation, you only need to run the `:PlugInstall` command when you first start __vim__. There could be some errors reported by __vim__ for the first time, but this is normal, since there aren't any plugins installed yet.
 
-## Vanilla functionality
+# Vanilla functionality
 
-### Shortcuts
+## Shortcuts
 
 The leader key is mapped to the `<space>` key.
 
@@ -143,7 +143,7 @@ The leader key is mapped to the `<space>` key.
 |:---------|:----:|:-------|
 | `%` | `N` | Finds the  |
 
-### Plugins
+## Plugins
 
 __Vim-Plug__ installs the following plugins by executing the `:PlugInstall` command in __vim__.
 
