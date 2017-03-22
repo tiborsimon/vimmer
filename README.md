@@ -27,9 +27,86 @@ This will download and execute the install script hosted on GitHub pages.
 The vanilla script does the followings:
 
 1. Installs [vim-plug](https://github.com/junegunn/vim-plug).
-1. Creates/overwrite the `.vimrc` file on your system.
+1. Creates/overwrites the `.vimrc` file on your system.
 
 After installation, you only need to run the `:PlugInstall` command when you first start __vim__. There could be some errors reported by __vim__ for the first time, but this is normal, since there aren't any plugins installed yet.
+
+## Vanilla functionality
+
+### Shortcuts
+
+The leader key is mapped to the `<space>` key.
+
+| Shortcut type | Syntax | Usage |
+|:--------------|:------:|:------|
+| Combination | `<X-Y>` | Press the `X` and `Y` keys at once. |
+| Sequence | `X` `Y` | Press the `X` `Y` in sequence. |
+
+| Plugin | Shortcut | Mode | Action |
+|:-------|:--------:|:----:|:-------|
+| __General__ | `;` | `N` `V` | Was mapped to the `:` character. |
+| | `<leader>` `w` | `N` | Saves the current buffer with the `:w` command. |
+| | `<leader>` `q` | `N` | Closes the current buffer with the `:q` command. |
+| | `<C-l>` | `N` | Selects the split on the right. |
+| | `<C-h>` | `N` | Selects the split on the left. |
+| | `<C-j>` | `N` | Selects the split on the bottom. |
+| | `<C-k>` | `N` | Selects the split on the top. |
+| | `<C-e>` | `N` | Go down. |
+| | `<C-y>` | `N` | Go up. |
+| __Makefile__ | `<leader>` `m` `m` | `N` | Executes the default make target in the project root. |
+| | `<leader>` `m` `t` | `N` | Executes the `test` make target in the project root. |
+| | `<leader>` `m` `c` | `N` | Executes the `clean` make target in the project root. |
+| | `<leader>` `m` `<leader>` | `N` | Prompts for make target. |
+| __[Argeppiator](https://github.com/kana/vim-arpeggio)__ | `<j-k>`   | `N` `V` | Pressing the two key together produces an `<esc>` keypress. |
+| __[SexyScroller](https://github.com/joeytwiddle/sexy_scroller.vim)__ | `<C-f>` | `N` | Sexy scroll down a page! |
+| | `<C-f>` | `N` | Sexy scroll up a page! |
+| __[NerdTree](https://github.com/scrooloose/nerdtree)__ | `<F2>`   | `N` | Toggles the _NerdTree_ side panel. |
+| | `<F3>` | `NERD` | Opens up the _NerdTree Menu_. |
+| | `A` | `NERD` | Toggles the wide _NerdTree_ side panel. |
+| | `I` | `NERD` | Toggles the display of hidden files. |
+| | `x` | `NERD` | Closes the current directory level. |
+| | `U` | `NERD` | Goes up one level. |
+| | `C` | `NERD` | Set the current directory to the root. |
+| | `?` | `NERD` | Toggles the _NerdTree_ help. |
+| __[BetterWhitespace](https://github.com/ntpeters/vim-better-whitespace)__ | `<leader>` `s` `w` | `N` | Cleans up the unnecessary whitespaces. |
+| __[Bookmarks](https://github.com/MattesGroeger/vim-bookmarks)__ | `m` `m` | `N` | Adds/removes a bookmark to the current line. |
+| | `m` `i` | `N` | Adds an annotated bookmark to the current line. |
+| | `m` `n` | `N` | Jumps to the next bookmark. |
+| | `m` `p` | `N` | Jumps to the previous bookmark. |
+| __[Buffergator](https://github.com/jeetsukumaran/vim-buffergator)__ | `<leader>` `b` | `N` | Opens up the opened buffer list side pane. |
+| __[EasyMotion](https://github.com/easymotion/vim-easymotion)__ | `<leader>` `<leader>` `w` | `N` | Easy motion down. |
+| | `<leader>` `<leader>` `b` | `N` | Easy motion up. |
+| __[MultipleCursors](https://github.com/terryma/vim-multiple-cursors)__ | `<C-n>` | `N` | Selects the next similar word/selection. |
+| | `<C-p>` | `N` | Movesthe previous, unselects the current similar word/selection. |
+| | `<C-x>` | `N` | Jumps over the current similar word/selection. |
+| __[VimSurrounds](https://github.com/tpope/vim-surround)__ | `c` `s` `'` `"` | `N` | Changes the surround from `'` to `"`. |
+| __[MatchTag](https://github.com/tpope/vim-surround)__ | `%` | `N` | Finds the  |
+
+### Plugins
+
+__Vim-Plug__ installs the following plugins by executing the `:PlugInstall` command in __vim__.
+
+| Plugin | Short description |
+|:-------|:------------------|
+| [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) | Automatic closing character insertion. |
+| [kana/vim-arpeggio](https://github.com/kana/vim-arpeggio) | Mapping to fast combined key presses. |
+| [ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace) | Improves vim whatespace management. |
+| [jeetsukumaran/vim-buffergator](https://github.com/jeetsukumaran/vim-buffergator) | Wrapper around the built in buffer API. |
+| [MattesGroeger/vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks) | Easy bookmarks handling. |
+| [easymotion/vim-easymotion](https://github.com/easymotion/vim-easymotion) | Fast navigation in the code. |
+| [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter) | Git changes displayed in the gutter column. |
+| [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) | Allows multiple cursors. |
+| [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) | Superior file management. |
+| [elzr/vim-json](https://github.com/elzr/vim-json) | Json syntax support. |
+| [dbakker/vim-projectroot](https://github.com/dbakker/vim-projectroot) | Finds the root of the current project and uses it for commands. |
+| [gregsexton/MatchTag](https://github.com/gregsexton/MatchTag) | Highlights the matching tags. |
+| [mhinz/vim-startify](https://github.com/mhinz/vim-startify) | Funny cow @ startup. |
+| [tpope/vim-surround](https://github.com/tpope/vim-surround) | Fast surround editing. |
+| [ervandew/supertab](https://github.com/ervandew/supertab) | Smart tab completition. |
+| [joeytwiddle/sexy_scroller.vim](https://github.com/joeytwiddle/sexy_scroller.vim) | Sexy scrolling for everyone. |
+| [nathanalderson/yang.vim](https://github.com/nathanalderson/yang.vim) | Yang syntax support. |
+| [tpope/vim-repeat](https://github.com/tpope/vim-repeat) | Makes not repeatable commands repeatable. |
+| [sukima/xmledit](https://github.com/sukima/xmledit) | XML editing support. |
 
 
 ## License 
