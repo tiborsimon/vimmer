@@ -60,6 +60,7 @@ let mapleader="\<Space>"
 nnoremap <leader>l :source ~/.vimrc<cr>
 
 nnoremap ; :
+vnoremap ; :
 
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
