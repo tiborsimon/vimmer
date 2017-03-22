@@ -5,7 +5,6 @@
 1. `bash <(curl -fsSL tiborsimon.github.io/vimmers/deploy)`
 1. start vim
 1. run: `:PlugInstall` in vim
-1. celebrate
 
 ## Create your own configuration
 
