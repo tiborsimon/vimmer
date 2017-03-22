@@ -82,7 +82,7 @@ The leader key is mapped to the `<space>` key.
 
 | Shortcut | Mode | Action |
 |:---------|:----:|:-------|
-| `<F2>`   | `N` | Toggles the _NerdTree_ side panel. |
+| `<F2>`   | `N` `NERD` | Toggles the _NerdTree_ side panel. |
 | `<F3>` | `NERD` | Opens up the _NerdTree Menu_. |
 | `A` | `NERD` | Toggles the wide _NerdTree_ side panel. |
 | `I` | `NERD` | Toggles the display of hidden files. |
