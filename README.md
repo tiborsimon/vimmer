@@ -141,7 +141,7 @@ The leader key is mapped to the `<space>` key.
 
 | Shortcut | Mode | Action |
 |:---------|:----:|:-------|
-| `%` | `N` | Finds the  |
+| `%` | `N` | Jumps to the matching tag.  |
 
 ## Plugins
 
