@@ -55,6 +55,10 @@ The leader key is mapped to the `<space>` key.
 | `<C-k>` | `N` | Selects the split on the top. |
 | `<C-e>` | `N` | Go down. |
 | `<C-y>` | `N` | Go up. |
+| `J`     | `N` | Move current line down. |
+| `K`     | `N` | Move current line up. |
+| `J`     | `V` | Move current selection down. |
+| `K`     | `V` | Move current selection up. |
 
 ### Makefile
 
