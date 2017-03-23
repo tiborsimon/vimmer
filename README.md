@@ -8,9 +8,9 @@
 
 ## Create your own configuration
 
-1. Fork this repository.
+1. __Fork__ this repository.
 1. Activated [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) for the forked repo to host files from the _master branch_.
-1. Customize the configuration to your taste.
+1. __Customize__ the configuration to your taste.
 
 ## Deploy the configuration
 
