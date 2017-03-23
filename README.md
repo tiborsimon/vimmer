@@ -9,9 +9,7 @@
 ## Create your own configuration
 
 1. Fork this repository.
-1. Activated GitHub Pages for the forked repo to host files from the master repo:
-    1. https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
-    1. The link `https://USERNAME.github.io/vimmer/deploy` should display the raw `deploy` script.
+1. Activated [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) for the forked repo to host files from the master repo. The link `https://USERNAME.github.io/vimmer/deploy` should display the raw `deploy` script.
 1. Customize the configuration to your taste.
 
 ## Deploy the configuration
