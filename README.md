@@ -1,4 +1,4 @@
-# Vim configuration script
+# Vim configuration deploy script
 
 ## TL;DR
 
