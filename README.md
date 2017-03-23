@@ -80,7 +80,7 @@ The leader key is mapped to the `<space>` key.
 | Shortcut | Mode | Action |
 |:---------|:----:|:-------|
 | `<C-f>` | `N` | Sexy scroll down a page! |
-| `<C-f>` | `N` | Sexy scroll up a page! |
+| `<C-b>` | `N` | Sexy scroll up a page! |
 
 ### NerdTree
 
