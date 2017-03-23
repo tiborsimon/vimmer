@@ -27,7 +27,7 @@ The vanilla script does the followings:
 1. Installs [vim-plug](https://github.com/junegunn/vim-plug).
 1. Creates/overwrites the `.vimrc` file on your system.
 
-After installation, you only need to run the `:PlugInstall` command when you first start __vim__. There could be some errors reported by __vim__ for the first time, but this is normal, since there aren't any plugins installed yet.
+After installation, you only need to run the `:PlugInstall` command when you first start __vim__. There could be some errors reported by __vim__ for the first time, but this is normal, press _enter_ to continue.
 
 # Vanilla functionality
 
@@ -135,6 +135,7 @@ The leader key is mapped to the `<space>` key.
 |:---------|:----:|:-------|
 | `c` `s` `'` `"` | `N` | Changes the surround from `'` to `"`. |
 
+
 ### MatchTag
 
 | Shortcut | Mode | Action |
@@ -166,6 +167,37 @@ __Vim-Plug__ installs the following plugins by executing the `:PlugInstall` comm
 | [nathanalderson/yang.vim](https://github.com/nathanalderson/yang.vim) | Yang syntax support. |
 | [tpope/vim-repeat](https://github.com/tpope/vim-repeat) | Makes not repeatable commands repeatable. |
 | [sukima/xmledit](https://github.com/sukima/xmledit) | XML editing support. |
+
+
+## Compatibility
+
+| Vim version |
+|:------------|
+| VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Jan 30 2014 10:56:39) |
+| Included patches: 1-160 |
+
+
+| Plugin | Used hash |
+|:-------|:---------:|
+| MatchTag | `38250f4` |
+| auto-pairs | `20ec5b0` |
+| nerdtree | `e671e40` |
+| sexy_scroller.vim | `e974aca` |
+| supertab | `cdaa5c2` |
+| vim-arpeggio | `d2a8214` |
+| vim-better-whitespace | `7729bad` |
+| vim-bookmarks | `04a3d92` |
+| vim-buffergator | `04dfbc0` |
+| vim-easymotion | `19d00af` |
+| vim-gitgutter | `1c034be` |
+| vim-json | `f5e3181` |
+| vim-multiple-cursors | `51d0717` |
+| vim-projectroot | `432ce30` |
+| vim-repeat | `7a6675f` |
+| vim-startify | `2e89a6e` |
+| vim-surround | `e49d6c2` |
+| xmledit | `1335d79` |
+| yang.vim | `df68550` |
 
 
 ## License 
