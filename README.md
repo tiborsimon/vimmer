@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-1. `bash <(curl -fsSL tiborsimon.github.io/vimmers/deploy)`
+1. `bash <(curl -fsSL tiborsimon.github.io/vimmer/deploy)`
 1. start vim
 1. run: `:PlugInstall` in vim
 
@@ -11,7 +11,7 @@
 1. Fork this repository.
 1. Activated GitHub Pages for the forked repo to host files from the master repo:
     1. https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
-    1. The link `https://USERNAME.github.io/vimmers/deploy` should display the raw `deploy` script.
+    1. The link `https://USERNAME.github.io/vimmer/deploy` should display the raw `deploy` script.
 1. Customize the configuration to your taste.
 
 ## Deploy the configuration
@@ -19,7 +19,7 @@
 Deploy the configuration by running the following command: 
 
 ```
-bash <(curl -fsSL USERNAME.github.io/vimmers/deploy)
+bash <(curl -fsSL USERNAME.github.io/vimmer/deploy)
 ```
 
 This will download and execute the install script hosted on GitHub pages.
