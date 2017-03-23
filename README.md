@@ -1,5 +1,7 @@
 # Vim configuration deploy script
 
+This repository contains a vim configuration deployment system with my basic vim configuration that I find useful to have for a better vim experience. You should fork this repo, and create your own ;)
+
 ## TL;DR
 
 1. `bash <(curl -fsSL tiborsimon.github.io/vimmer/deploy)`
